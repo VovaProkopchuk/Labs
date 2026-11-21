@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Українське кіно — найкращі фільми</title>
+    <!-- Підключаємо шрифти: Playfair Display (журнальний з засічками) та Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <a href="#" class="logo">КІНО•УКРАЇНА</a>
+            <div class="menu-links">
+                <a href="#about">Про кіно</a>
+                <a href="#history">Історія</a>
+                <a href="#films">Фільми</a>
+                <a href="#directors">Режисери</a>
+                <a href="#favorite">Мій вибір</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Головний екран: слайдер із 3 банерів -->
+        <section class="hero">
+            <!-- Слайд 1 -->
+            <div class="hero-slide active" style="background-image: url('images/shadows-hero.jpg');">
+                <div class="hero-content">
+                    <span class="hero-tag">КУЛЬТУРА • СПАДЩИНА</span>
+                    <h1>Українське кіно</h1>
+                    <h3>Спадщина, що надихає світ та формує культурну ідентичність</h3>
+                    <p>Відкрийте найкращі українські фільми, видатних режисерів та ключові віхи кінематографа.</p>
+                    <a href="#films" class="button">Дослідити фільми</a>
+                </div>
+            </div>
+
+            <!-- Слайд 2 -->
+            <div class="hero-slide" style="background-image: url('images/zemlya-hero.jpg');">
+                <div class="hero-content">
+                    <span class="hero-tag">СВІТОВА КЛАСИКА • 1930</span>
+                    <h1>Поетичний код Олександра Довженка</h1>
+                    <h3>Кінопоема «Земля» — серед 12 найкращих фільмів усіх часів</h3>
+                    <p>Від новаторського монтажу 1920-х до філософського осмислення гармонії людини й природи.</p>
+                    <a href="#history" class="button">Читати хронологію</a>
+                </div>
+            </div>
+
+            <!-- Слайд 3 -->
+            <div class="hero-slide" style="background-image: url('images/mavka-hero.jpg');">
+                <div class="hero-content">
+                    <span class="hero-tag">СУЧАСНИЙ РЕНЕСАНС</span>
+                    <h1>Нова хвиля українського екрана</h1>
+                    <h3>Від фестивалів у Каннах і Венеції до світових касових рекордів</h3>
+                    <p>Сучасні драми, авторська іронія та масштабна анімація, що підкорюють глядачів по всьому світу.</p>
+                    <a href="#directors" class="button">Відомі режисери</a>
+                </div>
+            </div>
+
+            <!-- Індикатори слайдів (крапки внизу) -->
+            <div class="hero-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+        </section>
+
+
+
+        <!-- Про українське кіно -->
+        
+<section id="about" class="about">
+            <h2>Про українське кіно</h2>
+            <p>Українське кіно має багату та драматичну історію, що охоплює понад століття безперервних творчих пошуків. Ще на світанку кінематографа українські митці робили сміливі експерименти з монтажем, світлом та операторською роботою, закладаючи фундамент світової кіномови. Особливе місце в історії посідає <strong>українське поетичне кіно</strong>, яке поєднало глибокий фольклор, філософську символіку та неповторну візуальну естетику.</p>
+            <p>Попри десятиліття цензури та заборон, національний кінематограф зберіг свою самобутність. Сьогодні сучасні українські режисери створюють стрічки різних жанрів — від авторських драм і документалістики до масштабних історичних екшенів та анімації, здобуваючи престижні нагороди на провідних кінофестивалях у Каннах, Венеції та Берліні.</p>
+        </section>
+
+        <!-- Додаткове завдання 1: Хронологія розвитку кіно -->
+        <section id="history" class="timeline-section">
+            <h2>Хронологія розвитку українського кіно</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="year">1893</span>
+                    <p>Винахідник Йосип Тимченко в Одесі сконструював перший кіноапарат і продемонстрував два фільми за два роки до братів Люм'єр.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">1930</span>
+                    <p>Вихід німого шедевра Олександра Довженка «Земля», який увійшов до списку 12 найкращих фільмів усіх часів і народів.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">1965</span>
+                    <p>Прем'єра фільму Сергія Параджанова «Тіні забутих предків», що започаткувала хвилю українського поетичного кіно.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">2014-2023</span>
+                    <p>Новий ренесанс українського кіно: світове визнання стрічок «Плем’я», «Мої думки тихі» та рекордний успіх анімації «Мавка. Лісова пісня».</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Картки фільмів -->
+        <section id="films" class="films">
+            <h2>Популярні українські фільми</h2>
+            <div class="film-grid">
+                <article class="film-card">
+                    <img src="images/zemlya.jpg" alt="Кадр із фільму Земля">
+                    <div class="film-info">
+                        <h3>Земля</h3>
+                        <p class="film-year">1930 рік</p>
+                        <p>Філософська кінопоема Олександра Довженка про колективізацію, гармонію людини з природою та вічний цикл життя.</p>
+                        <a href="https://uk.wikipedia.org/wiki/%D0%97%D0%B5%D0%BC%D0%BB%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1930)" target="_blank" class="details-link">Детальніше →</a>
+                    </div>
+                </article>
+
+                <article class="film-card">
+                    <img src="images/shadows.jpg" alt="Кадр із фільму Тіні забутих предків">
+                    <div class="film-info">
+                        <h3>Тіні забутих предків</h3>
+                        <p class="film-year">1965 рік</p>
+                        <p>Культова стрічка Сергія Параджанова за повістю Михайла Коцюбинського про трагічне кохання гуцульських Ромео і Джульєтти.</p>
+                        <a href="https://uk.wikipedia.org/wiki/%D0%A2%D1%96%D0%BD%D1%96_%D0%B7%D0%B0%D0%B1%D1%83%D1%82%D0%B8%D1%85_%D0%BF%D1%80%D0%B5%D0%B4%D0%BA%D1%96%D0%B2_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)" target="_blank" class="details-link">Детальніше →</a>
+                    </div>
+                </article>
+
+                <article class="film-card">
+                    <img src="images/povodyr.jpg" alt="Кадр із фільму Поводир">
+                    <div class="film-info">
+                        <h3>Поводир</h3>
+                        <p class="film-year">2014 рік</p>
+                        <p>Історична драма Олеся Саніна про подорож американського хлопчика та сліпого кобзаря Україною 1930-х років.</p>
+                        <a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2014)" target="_blank" class="details-link">Детальніше →</a>
+                    </div>
+                </article>
+
+                <article class="film-card">
+                    <img src="images/thoughts.jpg" alt="Кадр із фільму Мої думки тихі">
+                    <div class="film-info">
+                        <h3>Мої думки тихі</h3>
+                        <p class="film-year">2019 рік</p>
+                        <p>Трагікомедія Антоніо Лукіча про молодого звукорежисера, який вирушає на Закарпаття записувати голоси рідкісних тварин.</p>
+                        <a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%BE%D1%97_%D0%B4%D1%83%D0%BC%D0%BA%D0%B8_%D1%82%D0%B8%D1%85%D1%96" target="_blank" class="details-link">Детальніше →</a>
+                    </div>
+                </article>
+
+                <article class="film-card">
+                    <img src="images/mavka.jpg" alt="Кадр із мультфільму Мавка. Лісова пісня">
+                    <div class="film-info">
+                        <h3>Мавка. Справжній міф</h3>
+                        <p class="film-year">2023 рік</p>
+                        <p>Український романтичний фільм-фентезі,де події відбуваються в сучасній Україні та спираються на мотиви української міфології і демонології.</p>
+                        <a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B2%D0%BA%D0%B0._%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%B6%D0%BD%D1%96%D0%B9_%D0%BC%D1%96%D1%84" target="_blank" class="details-link">Детальніше →</a>
+                    </div>
+                </article>
+
+                <article class="film-card">
+                    <img src="images/tribe.jpg" alt="Кадр із фільму Плем'я">
+                    <div class="film-info">
+                        <h3>Плем’я</h3>
+                        <p class="film-year">2014 рік</p>
+                        <p>Кримінальна драма Мирослава Слабошпицького, знята виключно жестовою мовою без субтитрів та закадрового голосу.</p>
+                        <a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B5%D0%BC%27%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2014)" target="_blank" class="details-link">Детальніше →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Відомі режисери -->
+        <section id="directors" class="directors">
+            <h2>Відомі режисери</h2>
+            
+            <article class="director-card">
+                <img src="images/dovzhenko.jpg" alt="Портрет Олександра Довженка">
+                <div class="director-info">
+                    <h3>Олександр Довженко (1894–1956)</h3>
+                    <p>Класик світового кінематографа, кінорежисер і письменник. Його новаторський підхід до монтажу та поетичного зображення природи вплинув на розвиток світового кіно. Відомі роботи: <strong>«Звенигора» (1928)</strong> та <strong>«Земля» (1930)</strong>.</p>
+                </div>
+            </article>
+
+            <article class="director-card">
+                <img src="images/parajanov.jpg" alt="Портрет Сергія Параджанова">
+                <div class="director-info">
+                    <h3>Сергій Параджанов (1924–1990)</h3>
+                    <p>Видатний кінорежисер і художник, засновник українського поетичного кіно, чий унікальний візуальний стиль захоплював Федеріко Фелліні та Жан-Люка Годара. Відомі фільми: <strong>«Тіні забутих предків» (1965)</strong> та <strong>«Колір граната» (1969)</strong>.</p>
+                </div>
+            </article>
+
+            <article class="director-card">
+                <img src="images/lukich.jpg" alt="Портрет Антоніо Лукіча">
+                <div class="director-info">
+                    <h3>Антоніо Лукіч (нар. 1992)</h3>
+                    <p>Один із найяскравіших представників нової хвилі українського кіно, майстер тонкої іронії та трагікомедії, лауреат фестивалю в Карлових Варах. Відомі фільми: <strong>«Мої думки тихі» (2019)</strong> та <strong>«Люксембург, Люксембург» (2022)</strong>.</p>
+                </div>
+            </article>
+        </section>
+
+
+        <!-- Додаткове завдання 4: Мій улюблений український фільм -->
+        <section id="favorite" class="favorite-film">
+            <h2>Мій улюблений український фільм</h2>
+            <div class="favorite-box">
+                <h3>«Мої думки тихі» (реж. Антоніо Лукіч, 2019)</h3>
+                <p>Ця стрічка вражає своєю щирістю, живими діалогами та впізнаваним гумором. Історія про пошук порозуміння між сином і матір'ю на тлі мальовничих краєвидів Закарпаття залишає теплий післясмак і змушує по-новому подивитися на буденні речі.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Українське кіно</p>
+        <p>Навчальний проєкт з HTML та CSS виконав Прокопчук Володимир</p>
+        <a href="#">Повернутися нагору ↑</a>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+                dots[i].classList.toggle('active', i === index);
+            });
+            currentSlide = index;
+        }
+
+        function goToSlide(index) {
+            showSlide(index);
+        }
+
+        // Автоматичне перемикання кожні 5 секунд
+        setInterval(() => {
+            let nextSlide = (currentSlide + 1) % slides.length;
+            showSlide(nextSlide);
+        }, 5000);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222222;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e3d32;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.actor, #together {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Розташування фото і тексту в 2 колонки */
+.actor {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.actor img {
+    width: 220px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0; /* Забороняє стискати фото, якщо тексту багато */
+}
+
+/* Прибираємо зайвий верхній відступ у заголовка, щоб він рівнявся по верху фото */
+.actor-info h2 {
+    margin-top: 0;
+}
+
+h2 {
+    color: #1e3d32;
+}
+
+a {
+    color: #b85d19;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #e1e7ee;
+}
